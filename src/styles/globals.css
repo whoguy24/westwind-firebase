@@ -52,3 +52,9 @@ body {
     --font-weight-bold: 500;
   
   }
+
+  .test {
+    height: 300px;
+    background-color: red;
+    width: 300px;
+  }
