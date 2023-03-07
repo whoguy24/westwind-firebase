@@ -3,10 +3,22 @@
 ///////////////////////////////////////////////////////
 
 // Import React Libraries
+import { useState } from 'react';
+
+// Import Application Libraries
+import useWindowMode from "@/hooks/useWindowMode.js"
 
 // Import MUI Components
+import Button from '@mui/material/Button';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import MenuIcon from '@mui/icons-material/Menu';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
-// Import Components
+// Import Dependent Components
 
 ///////////////////////////////////////////////////////
 ///// COMPONENT DESCRIPTION ///////////////////////////
@@ -29,9 +41,13 @@
 ///////////////////////////////////////////////////////
 
 export default function Navigation() {
+
+    const windowMode = useWindowMode()
     
     return (
         <>
+            { windowMode === "DESKTOP" && <p>DESKTOP</p> }
+            { windowMode === "MOBILE" && <p>MOBILE</p> }
         </>
     );
     

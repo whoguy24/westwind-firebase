@@ -4,6 +4,8 @@
 
 // Import React Libraries
 
+// Import Application Libraries
+
 // Import MUI Components
 
 // Import Dependent Components
@@ -13,7 +15,7 @@
 ///////////////////////////////////////////////////////
 
 // HIGH LEVEL DESCRIPTION: (Brief summary of the component, as well as where it's visible in the application.)
-// The Template component is used for development purposes.
+// The Template.jsx component is used for development purposes.
 // It doesn't show up anywhere in the application, and is not visible to end users.
 // ----------------------------------------------------
 // MODE OF OPERATION: (Why this component exists, and what problem it solves.)
