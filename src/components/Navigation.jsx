@@ -50,25 +50,21 @@ export default function Navigation() {
     return (
         <>
 
-            <AppBar id={styles.navigation_bar} position="static">
+            <AppBar id={ styles.navigation_bar } position="static">
 
-                <Toolbar >
+                {/* <Toolbar > */}
 
+                    <div id={ styles.navigation_container_left } >
 
-                    <div id="navigation-group-left">
-
-                        {/* <Button 
-                            id="navigation-button-home"
-                            variant="text" 
-                            disableRipple 
-                            onClick={()=>navigate("/home")}
-                            >
-                            Westwind Morgans
-                        </Button> */}
+                        <Button id={ styles.navigation_button_home } disableRipple >Westwind Morgans</Button>
 
                     </div>
 
-                    <div id="navigation-group-right">
+                    <div id={ styles.navigation_container_right } >
+
+                        <Button id={ styles.navigation_button_menu } >Horses</Button>
+                        <Button id={ styles.navigation_button_menu } >Contact</Button>
+                        <Button id={ styles.navigation_button_menu } >FB</Button>
                         
                         {/* <Button 
                             className="navigation-button-toolbar"
@@ -121,7 +117,7 @@ export default function Navigation() {
 
                     </div>
 
-                </Toolbar>
+                {/* </Toolbar> */}
 
             </AppBar>
         </>

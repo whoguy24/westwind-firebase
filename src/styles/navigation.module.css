@@ -1,4 +1,35 @@
 #navigation_bar {
+    display: flex;
+    flex-direction: row;
     background-color: var(--color-primary-500);
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation_container_left {
+    padding: 0px 0px 0px 60px;
+}
+
+#navigation_container_right {
+    display: flex;
+    padding: 0px 60px 0px 0px;
+    gap: 20px;
+}
+
+#navigation_button_home {
+    color: var(--color-accent-300);
+    font-size: clamp(1rem, 3vw, 1.75rem);
+    font-family: "Royal Signage";
+    text-transform: capitalize;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    #navigation_container_left {
+        padding: 0px 0px 0px 10px;
+    }
+    #navigation_container_right {
+        padding: 0px 10px 0px 10px;
+        gap: 10px;
+    }
 }

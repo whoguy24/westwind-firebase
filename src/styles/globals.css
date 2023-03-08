@@ -37,14 +37,6 @@ body {
     --color-neutral-500: rgba(0, 0, 0, 0.6);
     --color-neutral-700: #0000004d;
 
-    --font-size-100: 0.5rem;
-    --font-size-200: 0.75rem;
-    --font-size-300: 1.0rem;
-    --font-size-400: 1.25rem;
-    --font-size-500: 1.5rem;
-    --font-size-600: 1.75rem;
-    --font-size-700: 2.0rem;
-
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-bold: 500;
