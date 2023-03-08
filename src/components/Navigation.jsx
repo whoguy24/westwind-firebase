@@ -26,10 +26,10 @@ import MenuItem from '@mui/material/MenuItem';
 // The Navigation component renders the navigation bar on the top of the website.
 // ----------------------------------------------------
 // It is used to navigate to multiple pages in the web application. 
-// 
-// 
+// Makes use of the Next.js "Link" component to define the route to navigate to.
 // ----------------------------------------------------
-// 
+// This component has state that defines whether or not the "HORSES" menu should be open.
+// Navigation bar incorporates container divs that allow grouping of elements to the left and right sides.
 // Navigation bar is intended to be globally available across the web application at all times.
 // ----------------------------------------------------
 // Used in:
@@ -41,23 +41,25 @@ import MenuItem from '@mui/material/MenuItem';
 
 export default function Navigation() {
 
+    // Define Local State
     const [menuHorses, setMenuHorses] = useState(false);
     
+    // Render DOM
     return (
         <>
 
+            {/* Navigation Bar */}
             <AppBar id={ styles.navigation_bar } position="static">
-
                 <div id={ styles.navigation_container_left } >
 
+                    {/* Westwind Morgans Home Link */}
                     <Link href="/" id={ styles.navigation_button_home } >Westwind Morgans</Link>
 
                 </div>
-
                 <div id={ styles.navigation_container_right } >
 
+                    {/* Horses Link */}
                     <Button className={ styles.navigation_button } onClick={()=>setMenuHorses(event.target)}>Horses</Button>
-
                     <Menu disableScrollLock={true} anchorEl={menuHorses} open={Boolean(menuHorses)} onClose={()=>setMenuHorses(false)}>
                         <Link href="/stallions" >
                             <MenuItem onClick={()=>setMenuHorses(false)}>Stallions</MenuItem>
@@ -76,16 +78,17 @@ export default function Navigation() {
                         </Link>
                     </Menu>
 
+                    {/* Contact Link */}
                     <Link href="/contact" >
                         <Button className={ styles.navigation_button }>Contact</Button>
                     </Link>
 
                     {/* TODO: Incorporate admin button when admin layer is built */}
-
                     {/* <Link href="/admin" >
                         <Button className={ styles.navigation_button }>Admin</Button> 
                     </Link> */}
 
+                    {/* Facebook Link */}
                     <Link href="https://www.facebook.com/people/Westwind-Morgans/100063575859271/" target="_blank">
                         <IconButton id={ styles.navigation_button_fb }>
                             <FacebookIcon />
@@ -93,8 +96,8 @@ export default function Navigation() {
                     </Link>
 
                 </div>
-
             </AppBar>
+
         </>
     );
     
