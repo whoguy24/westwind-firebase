@@ -8,8 +8,11 @@ import { useState } from 'react';
 // Import Application Libraries
 import useWindowMode from "@/hooks/useWindowMode.js"
 
+import styles from '@/styles/navigation.module.css'
+
 // Import MUI Components
 import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -46,8 +49,81 @@ export default function Navigation() {
     
     return (
         <>
-            { windowMode === "DESKTOP" && <p>DESKTOP</p> }
-            { windowMode === "MOBILE" && <p>MOBILE</p> }
+
+            <AppBar id={styles.navigation_bar} position="static">
+
+                <Toolbar >
+
+
+                    <div id="navigation-group-left">
+
+                        {/* <Button 
+                            id="navigation-button-home"
+                            variant="text" 
+                            disableRipple 
+                            onClick={()=>navigate("/home")}
+                            >
+                            Westwind Morgans
+                        </Button> */}
+
+                    </div>
+
+                    <div id="navigation-group-right">
+                        
+                        {/* <Button 
+                            className="navigation-button-toolbar"
+                            aria-controls={ horsesMenuActive ? 'horses' : false } 
+                            aria-haspopup="true" 
+                            aria-expanded={ horsesMenuActive ? 'true' : false } 
+                            onClick={()=>setHorsesMenuActive(event.target)}
+                            >
+                            Horses
+                        </Button> */}
+
+                        {/* <Menu 
+                            disableScrollLock={true} 
+                            anchorEl={horsesMenuActive} 
+                            open={Boolean(horsesMenuActive)} 
+                            onClose={handleMenuClose}
+                            >
+                            <MenuItem onClick={(path)=>handleMenuClick("stallions")}>Stallions</MenuItem>
+                            <MenuItem onClick={(path)=>handleMenuClick("mares")}>Mares</MenuItem>
+                            <MenuItem onClick={(path)=>handleMenuClick("colts")}>Colts</MenuItem>
+                            <MenuItem onClick={(path)=>handleMenuClick("fillies")}>Fillies</MenuItem>
+                            <MenuItem onClick={(path)=>handleMenuClick("geldings")}>Geldings</MenuItem>
+                        </Menu> */}
+
+                        {/* <Button 
+                            className="navigation-button-toolbar"
+                            variant="text" 
+                            onClick={(path)=>handleMenuClick("contact")}
+                            >
+                            Contact
+                        </Button> */}
+
+                        {/* { user.id && 
+                            <Button 
+                                className="navigation-button-toolbar"
+                                variant="text" 
+                                onClick={(path)=>handleMenuClick("admin")}
+                                >
+                                Admin
+                            </Button> 
+                        } */}
+
+                        {/* <IconButton 
+                            className="navigation-button-toolbar-icon" 
+                            href={facebookLink}
+                            target="_blank"
+                            >
+                            <FacebookIcon />
+                        </IconButton> */}
+
+                    </div>
+
+                </Toolbar>
+
+            </AppBar>
         </>
     );
     

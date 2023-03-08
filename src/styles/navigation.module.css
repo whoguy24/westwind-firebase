@@ -1,0 +1,4 @@
+#navigation_bar {
+    background-color: var(--color-primary-500);
+    justify-content: space-around;
+}

@@ -51,6 +51,7 @@ export default function useWindowMode() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Return windowMode to component
   return windowMode;
 
 }

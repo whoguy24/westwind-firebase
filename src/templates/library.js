@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////
 
 // HIGH LEVEL DESCRIPTION: (Brief summary of the library.)
-// The template.js library is used for development purposes.
+// The library.js library is used for development purposes.
 // 
 // ----------------------------------------------------
 // MODE OF OPERATION: (Why this library exists, and what problem it solves.)
