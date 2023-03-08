@@ -1,19 +1,16 @@
 import '@/styles/globals.css'
 
-import { ThemeProvider } from '@mui/material/styles';
-import theme from '@/styles/theme.js';
-import CssBaseline from '@mui/material/CssBaseline';
+import { StylesProvider } from "@material-ui/core/styles";
 
 import Navigation from "@/components/Navigation";
 
 export default function App({ Component, pageProps }) {
   return (
     <>  
-      {/* <ThemeProvider theme={theme}> */}
-        {/* <CssBaseline /> */}
+      <StylesProvider injectFirst>
         <Navigation />
         <Component {...pageProps} />
-      {/* </ThemeProvider> */}
+      </StylesProvider>
     </>
   );
 }

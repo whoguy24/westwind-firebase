@@ -9,6 +9,10 @@ body {
     background-color: #0c0c0c;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ################################# */
 /*  CUSTOM FONTS                     */
 /* ################################# */
@@ -23,21 +27,42 @@ body {
 /* ################################# */
 
 :root {
-    --color-primary-300: rgba(223, 71, 37, 0.2);
-    --color-primary-500: rgba(223, 71, 37, 0.3);
-    --color-primary-700: rgba(100, 30, 20);
-    --color-primary-900: rgb(147, 35, 18);
 
-    --color-accent-100: hsla(50, 100%, 80%, 0.5);
-    --color-accent-200: hsla(50, 100%, 80%, 0.8);
-    --color-accent-300: rgba(255, 235, 166);
-    --color-accent-500: rgba(255, 248, 221);
+    --color-primary-300: rgba(70, 0, 0);
+    --color-primary-500: rgba(100, 30, 20);
+    --color-primary-700: rgb(150, 40, 30);
 
-    --color-neutral-300: rgba(12, 12, 12);
-    --color-neutral-500: rgba(0, 0, 0, 0.6);
-    --color-neutral-700: #0000004d;
+    --color-primary-300t: rgba(80, 30, 0, 0.2);
+    --color-primary-500t: rgba(220, 70, 40, 0.2);
+    --color-primary-700t: rgb(255, 70, 40, 0.3);
 
-    --font-weight-light: 300;
-    --font-weight-normal: 400;
-    --font-weight-bold: 500;
+
+    --color-neutral-300: rgba(10, 10, 10);
+    --color-neutral-500: rgba(30, 30, 30);
+    --color-neutral-700: rgba(50, 50, 50);
+
+    --color-neutral-300t: rgba(10, 10, 10, 0.2);
+    --color-neutral-500t: rgba(30, 30, 30, 0.2);
+    --color-neutral-700t: rgba(50, 50, 50, 0.2);
+
+    /* --color-accent-100: hsla(50, 100%, 80%, 0.5);
+    --color-accent-200: hsla(50, 100%, 80%, 0.8); */
+
+    --color-accent-300: rgba(255, 230, 160);
+    --color-accent-500: rgba(255, 255, 200);
+    --color-accent-700: rgba(255, 255, 255);
+
+}
+
+.MuiPaper-root {
+    background-color: var(--color-primary-500);
+}
+
+.MuiMenuItem-root {
+    color: var(--color-accent-300);
+    font-weight: 300;
+}
+
+.MuiMenuItem-root:hover {
+    background-color: var(--color-primary-500t);
 }
