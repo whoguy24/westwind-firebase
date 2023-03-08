@@ -4,8 +4,8 @@
 
 body {
     margin: 0px;
-    background: url("/background.png") repeat top center fixed; 
-    background-size: 30%;
+    /* background: url("/background.png") repeat top center fixed; 
+    background-size: 30%; */
     background-color: #0c0c0c;
 }
 
