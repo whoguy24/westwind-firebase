@@ -18,7 +18,7 @@
     text-transform: lowercase;
     color: var(--color-accent-300);
     font-size: clamp(1rem, 3vw, 2.5rem);
-    padding: clamp(10px, 3vw, 30px) 0px clamp(10px, 3vw, 30px) 0px;
+    padding: clamp(10px, 3vw, 20px) 0px clamp(10px, 3vw, 20px) 0px;
 }
 
 #home_hero_container {
@@ -42,9 +42,87 @@
     bottom: 6%;
 }
 
+#home_horses_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 16px;
+    padding: 16px;
+}
+
+.home_horses_card {
+    border-radius: 0px;
+}
+
+.home_horses_card:hover {
+    filter: brightness(115%);
+}
+
+.home_horses_card_label {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0px;
+    min-height: 18%;
+    background-color: var(--color-neutral-300t);
+    color: var(--color-accent-300);
+    letter-spacing: clamp(2px, 0.5vw, 4px);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.home_info_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 16px;
+    padding: 16px;
+}
+
+.home_info_image {
+    width: 100%;
+    margin: auto;
+}
+
+.home_info_text {
+    color: var(--color-accent-300);
+    font-weight: 300;
+    font-size: 1rem;
+    margin: auto;
+}
+
 @media screen and (max-width: 800px) {
     #home_hero_caption {
         left: 62%;
         top: 14%;
-      }
+    }
+
+    .home_horses_card_label {
+        font-size: 0.75rem;
+    }
+
+    .home_info_text {
+        color: var(--color-accent-300);
+        font-weight: 300;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #home_horses_grid {
+        grid-template-columns: 1fr;
+    }
+    .home_info_grid {
+        grid-template-columns: 1fr;
+    }
+    .home_horses_card_label {
+        font-size: 1rem;
+    }
 }

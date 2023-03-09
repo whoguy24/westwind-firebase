@@ -4,12 +4,11 @@
 
 body {
     margin: 0px;
-    /* background: url("/background.png") repeat top center fixed; 
-    background-size: 30%; */
-    background-color: #0c0c0c;
+    background-color: var(--color-neutral-500);
 }
 
 a {
+    color: transparent;
     text-decoration: none;
 }
 
@@ -28,6 +27,9 @@ a {
 
 :root {
 
+    --app-max-width: 1440px;
+    --content-max-width: 1000px;
+
     --color-primary-300: rgba(70, 0, 0);
     --color-primary-500: rgba(100, 30, 20);
     --color-primary-700: rgb(150, 40, 30);
@@ -36,14 +38,13 @@ a {
     --color-primary-500t: rgba(220, 70, 40, 0.2);
     --color-primary-700t: rgb(255, 70, 40, 0.3);
 
+    --color-neutral-300: rgba(0, 0, 0);
+    --color-neutral-500: rgba(10, 10, 10);
+    --color-neutral-700: rgba(20, 20, 20);
 
-    --color-neutral-300: rgba(10, 10, 10);
-    --color-neutral-500: rgba(30, 30, 30);
-    --color-neutral-700: rgba(50, 50, 50);
-
-    --color-neutral-300t: rgba(10, 10, 10, 0.2);
-    --color-neutral-500t: rgba(30, 30, 30, 0.2);
-    --color-neutral-700t: rgba(50, 50, 50, 0.2);
+    --color-neutral-300t: rgba(0, 0, 0, 0.6);
+    --color-neutral-500t: rgba(0, 0, 0, 0.3);
+    --color-neutral-700t: rgba(0, 0, 0, 0.1);
 
     --color-accent-300: rgba(255, 230, 160);
     --color-accent-500: rgba(255, 255, 200);
@@ -72,28 +73,44 @@ a {
 /*  GLOBAL STYLES / CLASSES          */
 /* ################################# */
 
-#app-container {
+#app {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
     background: url("/assets/background.png") repeat top center fixed; 
     background-size: 30%;
-    max-width: 1440px;
+    max-width: var(--app-max-width);
+    justify-content: center;
 }
 
-/* 
-
-TODO: Build Banner Component
-
-#banner {
-    width:100%;
-}
-  
-#banner-image {
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-500t);
     width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-} 
+    max-width: var(--content-max-width);
+    margin: auto;
+    font-family: "Royal Signage";
+    text-transform: capitalize;
+    font-size: clamp(1rem, 3vw, 1.75rem);
+    color: var(--color-accent-300);
+    padding: 8px 0px 8px 0px;
+}
 
-*/
+.container {
+    display: flex;
+    width: 100%;
+    max-width: var(--content-max-width);
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-neutral-500t);
+    max-width: var(--content-max-width);
+    margin: 0px clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px);
+}

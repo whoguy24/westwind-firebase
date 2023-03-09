@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
     <>  
       <StylesProvider injectFirst>
         <Navigation />
-        <div id="app-container">
+        <div id="app">
           <Component {...pageProps} />
         </div>
       </StylesProvider>
