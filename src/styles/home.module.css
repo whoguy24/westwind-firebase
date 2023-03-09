@@ -1,8 +1,0 @@
-#home {
-    display: flex;
-    width: 66%;
-    margin: auto;
-    background: url("/background.png") repeat top center fixed; 
-    background-size: 30%;
-    height: 100vh;
-}

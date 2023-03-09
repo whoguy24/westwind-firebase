@@ -1,11 +1,9 @@
-// Import Styles
-import styles from '@/styles/home.module.css'
+import Home from '@/pages/home/index.js'
 
-export default function Home() {
+export default function Index() {
   return (
     <>
-      <div id={ styles.home }>
-      </div>
+      <Home />
     </>
   )
 }

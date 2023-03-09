@@ -67,3 +67,22 @@ a {
 .MuiMenuItem-root:hover {
     background-color: var(--color-primary-500t);
 }
+
+/* ################################# */
+/*  GLOBAL STYLES / CLASSES          */
+/* ################################# */
+
+#app-container {
+    display: flex;
+    width: 66%;
+    margin: auto;
+    background: url("/background.png") repeat top center fixed; 
+    background-size: 30%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    #app-container {
+        width: 100%;
+    }
+}
