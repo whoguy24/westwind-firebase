@@ -1,0 +1,50 @@
+#home_header_foundation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Royal Signage";
+    text-transform: capitalize;
+    color: var(--color-accent-300);
+    width: 100%;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    padding: clamp(10px, 3vw, 30px) 0px clamp(10px, 3vw, 30px) 0px;
+}
+
+#home_header_otto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Royal Signage";
+    text-transform: lowercase;
+    color: var(--color-accent-300);
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    padding: clamp(10px, 3vw, 30px) 0px clamp(10px, 3vw, 30px) 0px;
+}
+
+#home_hero_container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+#home_hero_image {
+    width: 100%;
+}
+
+#home_hero_caption {
+    color: var(--color-accent-300);
+    font-weight: 300;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: clamp(0.4rem, 1vw, 0.6rem);
+    left: 78%;
+    bottom: 6%;
+}
+
+@media screen and (max-width: 800px) {
+    #home_hero_caption {
+        left: 62%;
+        top: 14%;
+      }
+}
