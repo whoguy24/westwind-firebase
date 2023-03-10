@@ -1,0 +1,13 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-500t);
+    width: 100%;
+    margin: auto;
+    font-family: "Royal Signage";
+    text-transform: capitalize;
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: var(--color-accent-300);
+    padding: 8px 0px 8px 0px;
+}

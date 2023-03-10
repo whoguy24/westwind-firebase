@@ -1,16 +1,34 @@
-import '@/styles/globals.css'
+///////////////////////////////////////////////////////
+///// PAGE MODULES ////////////////////////////////////
+///////////////////////////////////////////////////////
 
-import { StylesProvider } from "@material-ui/core/styles";
+// Import Styles
+import "@/styles/globals.css"
 
+// Import Components
 import Navigation from "@/components/Navigation";
+
+///////////////////////////////////////////////////////
+///// PAGE DESCRIPTION ////////////////////////////////
+///////////////////////////////////////////////////////
+
+// The _app.js page is the overall wrapper component of the entire web application.
+// It is used to render all other pages and components.
+// ----------------------------------------------------
+// Components meant to be rendered throughout the entire application should be implemented here.
+// "Navigation" - top navigation bar.
+
+///////////////////////////////////////////////////////
+///// PAGE FUNCTION ///////////////////////////////////
+///////////////////////////////////////////////////////
 
 export default function App({ Component, pageProps }) {
   return (
     <>  
-      <StylesProvider injectFirst>
         <Navigation />
-        <Component {...pageProps} />
-      </StylesProvider>
+        <div id="app">
+          <Component {...pageProps} />
+        </div>
     </>
   );
-}
+};
