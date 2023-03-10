@@ -3,21 +3,21 @@
 ///////////////////////////////////////////////////////
 
 // Import Styles
-import styles from '@/styles/navigation.module.css'
+import styles from "@/styles/navigation.module.css";
 
 // Import React Libraries
-import { useState } from 'react';
+import { useState } from "react";
 
 // Import Next Components
-import Link from 'next/link'
+import Link from "next/link";
 
 // Import MUI Components
-import Button from '@mui/material/Button';
-import AppBar from '@mui/material/AppBar';
-import IconButton from '@mui/material/IconButton';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import Button from "@mui/material/Button";
+import AppBar from "@mui/material/AppBar";
+import IconButton from "@mui/material/IconButton";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 ///////////////////////////////////////////////////////
 ///// COMPONENT DESCRIPTION ///////////////////////////
