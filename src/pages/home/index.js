@@ -36,10 +36,12 @@ export default function Home() {
 
       <Typography id={styles.home_header_otto}>Home of Westwind Otto</Typography>
 
-      <Header title="Horses" />
+
 
       <div className="container">
         <div className="content">
+
+        <Header title="Horses" />
 
 
           <div id={styles.home_horses_grid}>
@@ -127,10 +129,11 @@ export default function Home() {
         </div>
       </div>
 
-      <Header title="Why Foundation" />
 
       <div className="container">
         <div className="content">
+
+        <Header title="Why Foundation" />
 
           <div className={styles.home_info_grid}>
             <img className={styles.home_info_image} src="/assets/home_foundation.png" alt="why_foundation"/>
@@ -149,10 +152,11 @@ export default function Home() {
         </div>
       </div>
 
-      <Header title="Breeding" />
 
       <div className="container">
         <div className="content">
+
+        <Header title="Breeding" />
 
           <div className={styles.home_info_grid}>
             <img className={styles.home_info_image} src="/assets/home_breeding.png" alt="breeding"/>

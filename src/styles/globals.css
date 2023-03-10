@@ -27,7 +27,7 @@ a {
 
 :root {
 
-    --app-max-width: 1660px;
+    --app-max-width: 1440px;
     --content-max-width: 1000px;
 
     --color-primary-300: rgba(70, 0, 0);
@@ -96,6 +96,6 @@ a {
     flex-direction: column;
     width: 100%;
     background-color: var(--color-neutral-500t);
-    max-width: var(--app-max-width);
-    /* margin: clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px); */
+    max-width: var(--content-max-width);
+    margin: clamp(10px, 3vw, 20px) auto clamp(10px, 3vw, 20px) auto;
 }
