@@ -48,8 +48,10 @@
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    gap: 16px;
-    padding: 16px;
+    gap: 30px;
+    padding: 30px;
+    max-width: var(--content-max-width);
+    margin: auto;
 }
 
 .home_horses_card {
@@ -72,7 +74,7 @@
     background-color: var(--color-neutral-300t);
     color: var(--color-accent-300);
     letter-spacing: clamp(2px, 0.5vw, 4px);
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -82,8 +84,11 @@
     grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
     width: 100%;
-    gap: 16px;
-    padding: 16px;
+    column-gap: 16px;
+    gap: 30px;
+    padding: 30px;
+    max-width: var(--content-max-width);
+    margin: auto;
 }
 
 .home_info_image {
@@ -94,7 +99,7 @@
 .home_info_text {
     color: var(--color-accent-300);
     font-weight: 300;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     margin: auto;
 }
 
@@ -103,23 +108,16 @@
         left: 62%;
         top: 14%;
     }
-
-    .home_horses_card_label {
-        font-size: 0.75rem;
+    #home_horses_grid {
+        grid-template-columns: 1fr 1fr;
     }
-
-    .home_info_text {
-        color: var(--color-accent-300);
-        font-weight: 300;
-        font-size: 0.75rem;
+    .home_info_grid {
+        grid-template-columns: 1fr;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #home_horses_grid {
-        grid-template-columns: 1fr;
-    }
-    .home_info_grid {
         grid-template-columns: 1fr;
     }
     .home_horses_card_label {

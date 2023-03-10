@@ -27,7 +27,7 @@ a {
 
 :root {
 
-    --app-max-width: 1440px;
+    --app-max-width: 1660px;
     --content-max-width: 1000px;
 
     --color-primary-300: rgba(70, 0, 0);
@@ -84,25 +84,10 @@ a {
     justify-content: center;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary-500t);
-    width: 100%;
-    max-width: var(--content-max-width);
-    margin: auto;
-    font-family: "Royal Signage";
-    text-transform: capitalize;
-    font-size: clamp(1rem, 3vw, 1.75rem);
-    color: var(--color-accent-300);
-    padding: 8px 0px 8px 0px;
-}
-
 .container {
     display: flex;
     width: 100%;
-    max-width: var(--content-max-width);
+    max-width: var(--app-max-width);
     margin: auto;
 }
 
@@ -111,6 +96,6 @@ a {
     flex-direction: column;
     width: 100%;
     background-color: var(--color-neutral-500t);
-    max-width: var(--content-max-width);
-    margin: 0px clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px);
+    max-width: var(--app-max-width);
+    /* margin: clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px); */
 }
