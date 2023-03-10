@@ -1,28 +1,47 @@
+///////////////////////////////////////////////////////
+///// PAGE MODULES ////////////////////////////////////
+///////////////////////////////////////////////////////
+
 // Import Styles
-import styles from '@/styles/home.module.css'
+import styles from "@/styles/home.module.css";
 
 // Import Next Components
-import Link from 'next/link'
-
-// Import Components
-import Header from "@/components/Header.jsx"
+import Link from "next/link";
 
 // Import MUI Components
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea } from '@mui/material';
+import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardMedia";
+import { CardActionArea } from "@mui/material";
+
+// Import Components
+import Header from "@/components/Header.jsx";
+
+///////////////////////////////////////////////////////
+///// PAGE DESCRIPTION ////////////////////////////////
+///////////////////////////////////////////////////////
+
+// The Home.js page is used as a landing page for any users entering the web application.
+// It displays our main hero image, as well as major card links to primary pages.
+// ----------------------------------------------------
+// Additionally, this page provides basic introductory details to other aspects of Westwind Morgans business.
+// At this time, this is mostly limited to short summaries of foundation breeding.
+// However, more content may be added in the future.
+
+///////////////////////////////////////////////////////
+///// PAGE FUNCTION ///////////////////////////////////
+///////////////////////////////////////////////////////
 
 export default function Home() {
   return (
     <>
 
+      {/* Headline - 100% Old Foundation Ranching Bloodlines */}
       <Typography id={styles.home_header_foundation}>100% Old Foundation Ranching Bloodlines</Typography>
 
+      {/* Hero Image - Westwind Otto with Photo License Caption */}
       <div id={styles.home_hero_container}>
-
         <img id={styles.home_hero_image} src="/assets/home_hero.png" alt="home"/>
-
         <Typography id={styles.home_hero_caption}>
           National Reined<br/>
           Cowhorse Association<br/>
@@ -31,21 +50,18 @@ export default function Home() {
           Zane Davis Trainer/Rider<br/>
           Rockin Horse Photography Image
         </Typography>
-
       </div>
 
+      {/* Headline - Home of Westwind Otto */}
       <Typography id={styles.home_header_otto}>Home of Westwind Otto</Typography>
-
-
-
+      
+      {/* Horses Section */}
       <div className="container">
         <div className="content">
-
         <Header title="Horses" />
-
-
           <div id={styles.home_horses_grid}>
 
+            {/* Stallion Link */}
             <Card className={styles.home_horses_card}>
               <CardActionArea>
                 <Link href="/stallions">
@@ -59,6 +75,7 @@ export default function Home() {
               </CardActionArea>
             </Card>
 
+            {/* Mares Link */}
             <Card className={styles.home_horses_card}>
               <CardActionArea>
                 <Link href="/mares">
@@ -72,6 +89,7 @@ export default function Home() {
               </CardActionArea>
             </Card>
 
+            {/* Geldings Link */}
             <Card className={styles.home_horses_card}>
               <CardActionArea>
                 <Link href="/geldings">
@@ -85,6 +103,7 @@ export default function Home() {
               </CardActionArea>
             </Card>
 
+            {/* Colts Link */}
             <Card className={styles.home_horses_card}>
               <CardActionArea>
                 <Link href="/colts">
@@ -98,6 +117,7 @@ export default function Home() {
               </CardActionArea>
             </Card>
 
+            {/* Fillies Link */}
             <Card className={styles.home_horses_card}>
               <CardActionArea>
                 <Link href="/fillies">
@@ -111,6 +131,7 @@ export default function Home() {
               </CardActionArea>
             </Card>
 
+            {/* Testimonials Link */}
             <Card className={styles.home_horses_card}>
               <CardActionArea>
                 <Link href="/testimonials">
@@ -125,16 +146,13 @@ export default function Home() {
             </Card>
 
           </div>
-
         </div>
       </div>
 
-
+      {/* Why Foundation Section */}
       <div className="container">
         <div className="content">
-
         <Header title="Why Foundation" />
-
           <div className={styles.home_info_grid}>
             <img className={styles.home_info_image} src="/assets/home_foundation.png" alt="why_foundation"/>
             <Typography className={styles.home_info_text} >
@@ -148,16 +166,13 @@ export default function Home() {
               family in Jewell County Kansas.<br/><br/>
             </Typography>
           </div>
-
         </div>
       </div>
 
-
+      {/* Breeding Section */}
       <div className="container">
         <div className="content">
-
         <Header title="Breeding" />
-
           <div className={styles.home_info_grid}>
             <img className={styles.home_info_image} src="/assets/home_breeding.png" alt="breeding"/>
             <Typography className={styles.home_info_text} >
@@ -172,5 +187,5 @@ export default function Home() {
       </div>
 
     </>
-  )
-}
+  );
+};

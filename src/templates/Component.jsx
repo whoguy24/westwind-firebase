@@ -38,11 +38,9 @@
 ///// COMPONENT FUNCTION //////////////////////////////
 ///////////////////////////////////////////////////////
 
-export default function Template() {
-    
-    return (
-        <>
-        </>
-    );
-    
-};
+// .. export default function Component() {
+// ..   return (
+// ..       <>
+// ..       </>
+// ..   );
+// .. };
