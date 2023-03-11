@@ -16,7 +16,7 @@ import { getFirestore } from "firebase/firestore";
 // This will allow the application to send and receive requests from the firestore database.
 // ----------------------------------------------------
 // Used in:
-//
+// hooks/useTestimonials.js
 //
 
 ///////////////////////////////////////////////////////
