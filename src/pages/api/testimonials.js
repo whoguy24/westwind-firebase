@@ -1,4 +1,4 @@
-import firestore from "@/libraries/firebase";
+import firestore from "@/pages/api/_firestore.js";
 import { collection, getDocs } from "firebase/firestore";
 
 export default async (req, res) => {

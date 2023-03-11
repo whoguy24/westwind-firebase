@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 
-import firestore from "@/libraries/firebase";
+import firestore from "@/pages/api/_firestore";
 
 import { collection, query, where, getDocs, addDoc, doc, setDoc } from "firebase/firestore";
 
@@ -17,9 +17,9 @@ export default function Testimonials() {
 
     const testimonials = useSelector(store => store.testimonials);
 
-    // useEffect( () => {
-    //   dispatch({ type: "FETCH_TESTIMONIALS" });
-    // }, []);
+    useEffect( () => {
+      dispatch({ type: "FETCH_TESTIMONIALS" });
+    }, []);
 
     async function handleClick() {
 

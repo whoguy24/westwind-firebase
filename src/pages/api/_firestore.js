@@ -16,7 +16,7 @@ import { getFirestore } from "firebase/firestore";
 // This will allow the application to send and receive requests from the firestore database.
 // ----------------------------------------------------
 // Used in:
-// hooks/useTestimonials.js
+// 
 //
 
 ///////////////////////////////////////////////////////
@@ -25,14 +25,14 @@ import { getFirestore } from "firebase/firestore";
 
 // Define Variables
 const firebaseConfig = {
-  apiKey: "AIzaSyDAfj1HaGNJ3r783qI_MgGehWa8qjsxknI",
-  authDomain: "westwind-morgans-377918.firebaseapp.com",
-  databaseURL: "https://westwind-morgans-377918-default-rtdb.firebaseio.com",
-  projectId: "westwind-morgans-377918",
-  storageBucket: "westwind-morgans-377918.appspot.com",
-  messagingSenderId: "597094908498",
-  appId: "1:597094908498:web:88dd373472f95e35e0d58b",
-  measurementId: "G-E14QW04W7R"
+  apiKey: process.env.FIRESTORE_API_KEY,
+  authDomain: process.env.FIRESTORE_AUTH_DOMAIN,
+  databaseURL: process.env.FIRESTORE_DATABASE_URL,
+  projectId: process.env.FIRESTORE_PROJECT_ID,
+  storageBucket: process.env.FIRESTORE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIRESTORE_MESSAGING_SENDER_ID,
+  appId: process.env.FIRESTORE_APP_ID,
+  measurementId: process.env.FIRESTORE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
