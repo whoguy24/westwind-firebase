@@ -8,6 +8,9 @@ import "@/styles/globals.css"
 // Import Components
 import Navigation from "@/components/Navigation";
 
+import { Provider } from 'react-redux';
+import store from '@/redux/store.js';
+
 ///////////////////////////////////////////////////////
 ///// PAGE DESCRIPTION ////////////////////////////////
 ///////////////////////////////////////////////////////
@@ -17,6 +20,7 @@ import Navigation from "@/components/Navigation";
 // ----------------------------------------------------
 // Components meant to be rendered throughout the entire application should be implemented here.
 // "Navigation" - top navigation bar.
+// "Provider" - Redux-Sagas persistant data store.
 
 ///////////////////////////////////////////////////////
 ///// PAGE FUNCTION ///////////////////////////////////
@@ -25,10 +29,12 @@ import Navigation from "@/components/Navigation";
 export default function App({ Component, pageProps }) {
   return (
     <>  
-        <Navigation />
-        <div id="app">
-          <Component {...pageProps} />
-        </div>
+        <Provider store={store}>
+          <Navigation />
+          <div id="app">
+            <Component {...pageProps} />
+          </div>
+        </Provider>
     </>
   );
 };
