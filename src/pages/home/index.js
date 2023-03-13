@@ -5,8 +5,14 @@
 // Import Styles
 import styles from "@/styles/home.module.css";
 
+// Import React Components
+import { useEffect } from "react";
+
 // Import Next Components
 import Link from "next/link";
+
+// Import Saga Redux Components
+import { useDispatch } from "react-redux";
 
 // Import MUI Components
 import Typography from "@mui/material/Typography";
@@ -33,6 +39,13 @@ import Header from "@/components/Header.jsx";
 ///////////////////////////////////////////////////////
 
 export default function Home() {
+
+  const dispatch = useDispatch();
+
+  useEffect( () => {
+    dispatch({ type: "FETCH_HORSES" });
+  }, []);
+  
   return (
     <>
 

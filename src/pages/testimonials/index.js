@@ -1,13 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-
-import firestore from "@/pages/api/_firestore";
-
-import { collection, query, where, getDocs, addDoc, doc, setDoc } from "firebase/firestore";
-
-
-
 import horses from "horses.json";
 
 export default function Testimonials() {

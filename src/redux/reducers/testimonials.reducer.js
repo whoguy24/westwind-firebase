@@ -8,4 +8,3 @@ const testimonialsReducer = (state = [], action) => {
 };
   
 export default testimonialsReducer;
-export const serverStore = state => state.server;
